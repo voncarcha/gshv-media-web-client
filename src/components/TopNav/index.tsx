@@ -27,20 +27,20 @@ const TopNav = () => {
   }, []);
 
   return (
-    mounted && (
-      <Box
-        as="nav"
-        h="74px"
-        w="full"
-        position="fixed"
-        top={0}
-        left={0}
-        borderBottom="1px solid"
-        borderColor="gray.200"
-        px="20px"
-        bgColor="white"
-        zIndex={10}
-      >
+    <Box
+      as="nav"
+      h="74px"
+      w="full"
+      position="fixed"
+      top={0}
+      left={0}
+      borderBottom="1px solid"
+      borderColor="gray.200"
+      px="20px"
+      bgColor="white"
+      zIndex={10}
+    >
+      {mounted && (
         <Flex
           maxW="1200px"
           m="0 auto"
@@ -164,8 +164,8 @@ const TopNav = () => {
             </Popover>
           )}
         </Flex>
-      </Box>
-    )
+      )}
+    </Box>
   );
 };
 
