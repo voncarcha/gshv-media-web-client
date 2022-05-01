@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Text,
   Input,
@@ -8,11 +9,17 @@ import {
   Textarea,
   Button,
 } from '@chakra-ui/react';
-import React from 'react';
 
 const Contact = () => {
   return (
-    <Box w="full" px="20px" py="60px" as="section" bgColor="#e1ede8">
+    <Box
+      w="full"
+      px="20px"
+      py="60px"
+      as="section"
+      bgColor="#e1ede8"
+      id="contact-us"
+    >
       <Box maxW="800px" m="0 auto">
         <Heading
           as="h2"
@@ -21,7 +28,7 @@ const Contact = () => {
           fontSize="30px"
           pb="40px"
         >
-          Tech Services
+          Contact us
         </Heading>
         <VStack as="article" spacing="20px">
           <HStack spacing={7} w="full">

@@ -9,12 +9,20 @@ const theme = extendTheme({
     light: '#fcfcfc',
     dark: '#333333',
     primary: '#4DBD90',
-    secondary: '#3e5c50'
+    secondary: '#3e5c50',
   },
   styles: {
     global: {
+      html: {
+        scrollBehavior: 'smooth',
+      },
       body: {
         color: '#333333',
+      },
+      a: {
+        _hover: {
+          textDecoration: 'none !important',
+        },
       },
       '*:focus': {
         outline: 'none',

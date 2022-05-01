@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Text,
   Box,
@@ -8,7 +9,7 @@ import {
   Button,
   Stack,
 } from '@chakra-ui/react';
-import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -22,6 +23,7 @@ const Header = () => {
       bgRepeat="no-repeat"
       px="20px"
       py="60px"
+      id="about"
     >
       <Flex
         justifyContent="space-between"
@@ -52,13 +54,28 @@ const Header = () => {
             outperform the competition and deliver with impact.
           </Text>
           <Stack direction={{ base: 'column', sm: 'row' }}>
-            <Button colorScheme="blackAlpha" size="lg">
+            <Button
+              as={ScrollLink}
+              to="marketing-services"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              colorScheme="blackAlpha"
+              size="lg"
+              cursor="pointer"
+            >
               Marketing Services
             </Button>
             <Button
+              as={ScrollLink}
+              to="tech-services"
+              smooth={true}
+              duration={500}
+              offset={-70}
               variant="outline"
               color="white"
               size="lg"
+              cursor="pointer"
               _hover={{ color: 'black', bgColor: 'white' }}
             >
               Tech Services

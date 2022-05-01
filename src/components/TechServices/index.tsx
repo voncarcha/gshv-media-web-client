@@ -3,7 +3,7 @@ import React from 'react';
 
 const TechServices = () => {
   return (
-    <Box w="full" px="20px" py="60px" as="section">
+    <Box w="full" px="20px" py="60px" as="section" id="tech-services">
       <Box maxW="1200px" m="0 auto">
         <Heading
           as="h2"
