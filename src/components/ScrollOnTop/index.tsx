@@ -17,6 +17,7 @@ const ScrollOnTop = () => {
       onClick={() => window.scrollTo(0, 0)}
       boxShadow="0 0 10px rgba(0,0,0,0.2)"
       _hover={{ bgColor: 'secondary' }}
+      zIndex={10}
     >
       <ArrowUpIcon color="white" fontSize="28px" />
     </Box>

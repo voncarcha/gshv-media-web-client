@@ -6,7 +6,6 @@ import NextLink from 'next/link';
 const CookieConsentBanner = () => {
   return (
     <CookieConsent
-      debug={true}
       buttonText="Accept"
       cookieName="gsvh-cookie-consent"
       expires={30}
