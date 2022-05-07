@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
 
-const Header = () => {
+const HeaderPrimary = () => {
   return (
     <Box
       as="section"
@@ -23,7 +23,6 @@ const Header = () => {
       bgRepeat="no-repeat"
       px="20px"
       py="60px"
-      id="about"
     >
       <Flex
         justifyContent="space-between"
@@ -93,4 +92,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderPrimary;

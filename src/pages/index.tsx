@@ -1,7 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Page from 'layouts/Page';
-import Header from 'components/Header';
+import HeaderPrimary from 'components/HeaderPrimary';
 import Partnership from 'components/Partnership';
 import Expertise from 'components/Expertise';
 import Features from 'components/Features';
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <Page>
       <TopNav />
-      <Header />
+      <HeaderPrimary />
       <Partnership />
       <Expertise />
       <Features />

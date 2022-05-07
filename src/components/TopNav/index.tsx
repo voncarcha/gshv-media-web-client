@@ -11,6 +11,7 @@ import {
   useMediaQuery,
 } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
+import NextLink from 'next/link';
 
 const TopNav = () => {
   const [mounted, setMounted] = useState(false);
@@ -41,59 +42,57 @@ const TopNav = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Image src="/images/logo.png" alt="logo" w="150px" h="70px" />
+        <NextLink href="/">
+          <Link>
+            <Image src="/images/logo.png" alt="logo" w="150px" h="70px" />
+          </Link>
+        </NextLink>
         {mounted && (
           <Box>
             {isMd ? (
               <HStack spacing={10}>
-                <Link
-                  as={ScrollLink}
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  fontWeight={700}
-                  color="secondary"
-                  _hover={{ color: 'primary' }}
-                >
-                  About
-                </Link>
-                <Link
-                  as={ScrollLink}
-                  to="marketing-services"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  fontWeight={700}
-                  color="secondary"
-                  _hover={{ color: 'primary' }}
-                >
-                  Marketing Services
-                </Link>
-                <Link
-                  as={ScrollLink}
-                  to="tech-services"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  fontWeight={700}
-                  color="secondary"
-                  _hover={{ color: 'primary' }}
-                >
-                  Tech Services
-                </Link>
-                <Link
-                  as={ScrollLink}
-                  to="contact-us"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  fontWeight={700}
-                  color="secondary"
-                  _hover={{ color: 'primary' }}
-                >
-                  Contact Us
-                </Link>
+                <NextLink href="/#marketing-services">
+                  <Link
+                    as={ScrollLink}
+                    to="marketing-services"
+                    smooth={true}
+                    duration={300}
+                    offset={-70}
+                    fontWeight={700}
+                    color="secondary"
+                    _hover={{ color: 'primary' }}
+                  >
+                    Marketing Services
+                  </Link>
+                </NextLink>
+                <NextLink href="/#tech-services">
+                  <Link
+                    as={ScrollLink}
+                    to="tech-services"
+                    smooth={true}
+                    duration={300}
+                    offset={-70}
+                    fontWeight={700}
+                    color="secondary"
+                    _hover={{ color: 'primary' }}
+                  >
+                    Tech Services
+                  </Link>
+                </NextLink>
+                <NextLink href="/#contact-us">
+                  <Link
+                    as={ScrollLink}
+                    to="contact-us"
+                    smooth={true}
+                    duration={300}
+                    offset={-70}
+                    fontWeight={700}
+                    color="secondary"
+                    _hover={{ color: 'primary' }}
+                  >
+                    Contact Us
+                  </Link>
+                </NextLink>
               </HStack>
             ) : (
               <IconButton
@@ -118,62 +117,54 @@ const TopNav = () => {
           padding="20px"
           borderRadius="5px"
         >
-          <Link
-            as={ScrollLink}
-            to="about"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            fontWeight={700}
-            color="secondary"
-            _hover={{ color: 'primary' }}
-            fontSize="18px"
-            onClick={() => setOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            as={ScrollLink}
-            to="marketing-services"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            fontWeight={700}
-            color="secondary"
-            _hover={{ color: 'primary' }}
-            fontSize="18px"
-            onClick={() => setOpen(false)}
-          >
-            Marketing Services
-          </Link>
-          <Link
-            as={ScrollLink}
-            to="tech-services"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            fontWeight={700}
-            color="secondary"
-            _hover={{ color: 'primary' }}
-            fontSize="18px"
-            onClick={() => setOpen(false)}
-          >
-            Tech Services
-          </Link>
-          <Link
-            as={ScrollLink}
-            to="contact-us"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            fontWeight={700}
-            color="secondary"
-            _hover={{ color: 'primary' }}
-            fontSize="18px"
-            onClick={() => setOpen(false)}
-          >
-            Contact Us
-          </Link>
+          <NextLink href="/#marketing-services">
+            <Link
+              as={ScrollLink}
+              to="marketing-services"
+              smooth={true}
+              duration={300}
+              offset={-70}
+              fontWeight={700}
+              color="secondary"
+              _hover={{ color: 'primary' }}
+              fontSize="18px"
+              onClick={() => setOpen(false)}
+            >
+              Marketing Services
+            </Link>
+          </NextLink>
+          <NextLink href="/#tech-services">
+            <Link
+              as={ScrollLink}
+              to="tech-services"
+              smooth={true}
+              duration={300}
+              offset={-70}
+              fontWeight={700}
+              color="secondary"
+              _hover={{ color: 'primary' }}
+              fontSize="18px"
+              onClick={() => setOpen(false)}
+            >
+              Tech Services
+            </Link>
+          </NextLink>
+          <NextLink href="/#contact-us">
+            <Link
+              as={ScrollLink}
+              to="contact-us"
+              smooth={true}
+              duration={300}
+              offset={-70}
+              fontWeight={700}
+              color="secondary"
+              _hover={{ color: 'primary' }}
+              fontSize="18px"
+              onClick={() => setOpen(false)}
+            >
+              Contact Us
+            </Link>
+          </NextLink>
         </VStack>
       )}
     </Box>

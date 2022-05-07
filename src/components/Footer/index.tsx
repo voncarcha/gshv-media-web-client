@@ -1,7 +1,10 @@
 import { Text, Image, Box, Stack, Button } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <Box as="footer" w="full" px="20px" py="40px" bgColor="#2b2c2e">
       <Stack
@@ -45,10 +48,18 @@ const Footer = () => {
             </Text>
           </Box>
           <Stack direction="column" maxW="200px">
-            <Button size="sm" colorScheme="whiteAlpha">
+            <Button
+              onClick={() => router.push('/terms-conditions')}
+              size="sm"
+              colorScheme="whiteAlpha"
+            >
               Terms & Conditions
             </Button>
-            <Button size="sm" colorScheme="whiteAlpha">
+            <Button
+              onClick={() => router.push('/privacy-policy')}
+              size="sm"
+              colorScheme="whiteAlpha"
+            >
               Privacy & Cookie Policy
             </Button>
           </Stack>
