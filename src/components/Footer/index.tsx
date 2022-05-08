@@ -10,7 +10,7 @@ const Footer = () => {
       <Stack
         direction={{ base: 'column', lg: 'row' }}
         justifyContent="space-between"
-        maxW="1200px"
+        maxW="1000px"
         m="0 auto"
         spacing={10}
         color="white"
@@ -18,7 +18,6 @@ const Footer = () => {
       >
         <Box textAlign={{ base: 'center', lg: 'left' }}>
           <Image
-            order={{ base: 0, lg: 1 }}
             src="/images/hero-logo.png"
             alt="logo"
             w="100px"

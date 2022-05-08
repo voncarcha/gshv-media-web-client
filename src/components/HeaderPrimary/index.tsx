@@ -22,12 +22,12 @@ const HeaderPrimary = () => {
       bgPos="center"
       bgRepeat="no-repeat"
       px="20px"
-      py="60px"
+      py="30px"
     >
       <Flex
         justifyContent="space-between"
         alignItems="center"
-        maxW="1200px"
+        maxW="1000px"
         m="0 auto"
         flexDir={{ base: 'column', lg: 'row' }}
       >
@@ -35,14 +35,12 @@ const HeaderPrimary = () => {
           spacing={8}
           alignItems={{ base: 'center', lg: 'flex-start' }}
           maxW={480}
-          order={{ base: 1, lg: 0 }}
           textAlign={{ base: 'center', lg: 'left' }}
         >
           <Heading
             as="h1"
             fontSize={{ base: '28px', lg: '38px' }}
             color="white"
-            mt={{ base: '30px', lg: 0 }}
             maxW={{ base: '340px', lg: '100%' }}
           >
             Tailored Technology and Made-To-Measure Marketing Solutions
@@ -82,10 +80,10 @@ const HeaderPrimary = () => {
           </Stack>
         </VStack>
         <Image
-          order={{ base: 0, lg: 1 }}
           src="/images/hero-logo.png"
           alt="logo"
           w="460px"
+          mt={{ base: 8, md: 0 }}
         />
       </Flex>
     </Box>

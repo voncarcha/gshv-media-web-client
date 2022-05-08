@@ -3,15 +3,15 @@ import { Image, Box, Heading, Grid } from '@chakra-ui/react';
 
 const Partnership = () => {
   return (
-    <Box as="section" w="full" bgColor="secondary" px="20px" py="40px">
-      <Box maxW="1200px" m="0 auto">
+    <Box as="section" w="full" bgColor="secondary" px="20px" py="20px">
+      <Box maxW="1000px" m="0 auto">
         <Heading
           as="h2"
           fontSize="16px"
           fontWeight={400}
           color="whiteAlpha.500"
           textAlign="center"
-          mb={4}
+          mb={2}
         >
           In Partnership With
         </Heading>
@@ -21,7 +21,7 @@ const Partnership = () => {
             md: 'repeat(3, 1fr)',
             lg: 'repeat(6, 1fr)',
           }}
-          gap={8}
+          gap={{ base: 4, md: 8 }}
           w="full"
         >
           <Image

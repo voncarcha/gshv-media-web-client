@@ -7,7 +7,7 @@ const Support = () => {
       <Stack
         direction={{ base: 'column', lg: 'row' }}
         justifyContent="center"
-        maxW="1200px"
+        maxW="1000px"
         m="0 auto"
         spacing={10}
       >

@@ -4,7 +4,7 @@ import React from 'react';
 const MarketingServices = () => {
   return (
     <Box w="full" px="20px" py="60px" as="section" id="marketing-services">
-      <Box maxW="1200px" m="0 auto">
+      <Box maxW="1000px" m="0 auto">
         <Heading
           as="h2"
           textAlign="center"

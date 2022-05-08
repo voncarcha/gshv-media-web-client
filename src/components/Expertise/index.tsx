@@ -4,7 +4,7 @@ import React from 'react';
 const Expertise = () => {
   return (
     <Box as="section" w="full" px="20px" py="40px" mt="30px">
-      <VStack m="0 auto" maxW="1200px">
+      <VStack m="0 auto" maxW="1000px">
         <Heading
           as="h2"
           textTransform="uppercase"

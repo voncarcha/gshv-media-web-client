@@ -37,7 +37,7 @@ const TopNav = () => {
       zIndex={10}
     >
       <Flex
-        maxW="1200px"
+        maxW="1000px"
         m="0 auto"
         alignItems="center"
         justifyContent="space-between"
