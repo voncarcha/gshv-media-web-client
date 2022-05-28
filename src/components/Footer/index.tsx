@@ -26,42 +26,35 @@ const Footer = () => {
           />
           <Text fontSize="14px">2021 GSHV Media LTD, All rights reserved.</Text>
         </Box>
-        <Stack
-          direction={{ base: 'column', lg: 'row' }}
-          justifyContent="space-between"
-          alignItems="center"
-          spacing={10}
-        >
-          <Box>
-            <Text textAlign="center">
-              GHSV MEDIA LTD
-              <br /> HE426173
-              <br /> info@gshvmedia.com
-            </Text>
-          </Box>
-          <Box>
-            <Text textAlign="center">
-              Arch. Makariou III, 256
-              <br /> Eftapaton Court, 3105
-              <br /> Limassol, Cyprus
-            </Text>
-          </Box>
-          <Stack direction="column" maxW="200px">
-            <Button
-              onClick={() => router.push('/terms-conditions')}
-              size="sm"
-              colorScheme="whiteAlpha"
-            >
-              Terms & Conditions
-            </Button>
-            <Button
-              onClick={() => router.push('/privacy-policy')}
-              size="sm"
-              colorScheme="whiteAlpha"
-            >
-              Privacy & Cookie Policy
-            </Button>
-          </Stack>
+        <Box>
+          <Text textAlign="center">
+            GHSV MEDIA LTD
+            <br /> HE426173
+            <br /> info@gshvmedia.com
+          </Text>
+        </Box>
+        <Box>
+          <Text textAlign="center">
+            Arch. Makariou III, 256
+            <br /> Eftapaton Court, 3105
+            <br /> Limassol, Cyprus
+          </Text>
+        </Box>
+        <Stack direction="column" maxW="200px">
+          <Button
+            onClick={() => router.push('/terms-conditions')}
+            size="sm"
+            colorScheme="whiteAlpha"
+          >
+            Terms & Conditions
+          </Button>
+          <Button
+            onClick={() => router.push('/privacy-policy')}
+            size="sm"
+            colorScheme="whiteAlpha"
+          >
+            Privacy & Cookie Policy
+          </Button>
         </Stack>
       </Stack>
     </Box>
