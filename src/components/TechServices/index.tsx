@@ -1,5 +1,9 @@
-import { Image, Box, Stack, VStack, Text, Heading } from '@chakra-ui/react';
+import { Box, Stack, VStack, Text, Heading, Center } from '@chakra-ui/react';
 import React from 'react';
+import Image from 'components/Image';
+import thumb1 from '../../../public/images/tech-image-1.png';
+import thumb2 from '../../../public/images/tech-image-2.png';
+import thumb3 from '../../../public/images/tech-image-3.png';
 
 const TechServices = () => {
   return (
@@ -16,11 +20,18 @@ const TechServices = () => {
         </Heading>
         <Stack as="ul" direction={{ base: 'column', lg: 'row' }} spacing={20}>
           <VStack as="li" spacing={5}>
-            <Image
-              src="/images/tech-image-1.png"
-              alt="thumbnail"
+            <Center
               h={{ base: '200px', lg: '280px' }}
-            />
+              sx={{ '> span': { height: '100% !important' } }}
+            >
+              <Image
+                src={thumb1}
+                alt="thumbnail"
+                h="full"
+                w="full"
+                objectFit="contain"
+              />
+            </Center>
             <Heading as="h3" fontSize="22px" textAlign="center">
               DIGITAL INFRASTRUCTURE
             </Heading>
@@ -31,11 +42,18 @@ const TechServices = () => {
             </Text>
           </VStack>
           <VStack as="li" spacing={5}>
-            <Image
-              src="/images/tech-image-2.png"
-              alt="thumbnail"
+            <Center
               h={{ base: '200px', lg: '280px' }}
-            />
+              sx={{ '> span': { height: '100% !important' } }}
+            >
+              <Image
+                src={thumb2}
+                alt="thumbnail"
+                h="full"
+                w="full"
+                objectFit="contain"
+              />
+            </Center>
             <Heading as="h3" fontSize="22px" textAlign="center">
               SECURE INFRASTRUCTURE
             </Heading>
@@ -46,11 +64,18 @@ const TechServices = () => {
             </Text>
           </VStack>
           <VStack as="li" spacing={5}>
-            <Image
-              src="/images/tech-image-3.png"
-              alt="thumbnail"
+            <Center
               h={{ base: '200px', lg: '280px' }}
-            />
+              sx={{ '> span': { height: '100% !important' } }}
+            >
+              <Image
+                src={thumb3}
+                alt="thumbnail"
+                h="full"
+                w="full"
+                objectFit="contain"
+              />
+            </Center>
             <Heading as="h3" fontSize="22px" textAlign="center">
               SOFTWARE INTEGRATION
             </Heading>

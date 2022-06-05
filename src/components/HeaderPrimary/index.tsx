@@ -3,13 +3,14 @@ import {
   Text,
   Box,
   Flex,
-  Image,
   Heading,
   VStack,
   Button,
   Stack,
 } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
+import Image from 'components/Image';
+import logo from '../../../public/images/hero-logo.png';
 
 const HeaderPrimary = () => {
   return (
@@ -79,12 +80,9 @@ const HeaderPrimary = () => {
             </Button>
           </Stack>
         </VStack>
-        <Image
-          src="/images/hero-logo.png"
-          alt="logo"
-          w="460px"
-          mt={{ base: 8, md: 0 }}
-        />
+        <Box maxW="460px" mt={{ base: 8, md: 0 }}>
+          <Image src={logo} alt="logo" />
+        </Box>
       </Flex>
     </Box>
   );

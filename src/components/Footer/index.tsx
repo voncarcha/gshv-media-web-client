@@ -1,6 +1,8 @@
-import { Text, Image, Box, Stack, Button } from '@chakra-ui/react';
+import { Text, Box, Stack, Button } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import React from 'react';
+import Image from 'components/Image';
+import logo from '../../../public/images/hero-logo.png';
 
 const Footer = () => {
   const router = useRouter();
@@ -17,13 +19,9 @@ const Footer = () => {
         w="full"
       >
         <Box textAlign={{ base: 'center', lg: 'left' }}>
-          <Image
-            src="/images/hero-logo.png"
-            alt="logo"
-            w="100px"
-            display="block"
-            m={{ base: 'auto', lg: '0' }}
-          />
+          <Box w={100}>
+            <Image src={logo} alt="logo" />
+          </Box>
           <Text fontSize="14px">2021 GSHV Media LTD, All rights reserved.</Text>
         </Box>
         <Box>

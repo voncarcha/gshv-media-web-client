@@ -1,5 +1,7 @@
-import { Image, Box, Stack, VStack, Text, Heading } from '@chakra-ui/react';
+import { Box, Stack, VStack, Text, Heading, Center } from '@chakra-ui/react';
 import React from 'react';
+import Image from 'components/Image';
+import thumb1 from '../../../public/images/support.png';
 
 const Support = () => {
   return (
@@ -11,15 +13,20 @@ const Support = () => {
         m="0 auto"
         spacing={10}
       >
-        <Box>
+        <Center
+          w={{ base: 300, md: 400 }}
+          m="auto"
+          h={{ base: '200px', lg: '280px' }}
+          sx={{ '> span': { height: '100% !important' } }}
+        >
           <Image
-            src="/images/support.png"
+            src={thumb1}
             alt="thumbnail"
-            h={{ base: '200px', lg: '280px' }}
-            display="block"
-            m="0 auto"
+            h="full"
+            w="full"
+            objectFit="contain"
           />
-        </Box>
+        </Center>
 
         <VStack as="li" spacing={5}>
           <Heading as="h3" fontSize="22px">

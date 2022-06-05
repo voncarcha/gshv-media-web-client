@@ -1,5 +1,7 @@
-import { Box, Heading, Stack, Text, Image, VStack } from '@chakra-ui/react';
 import React from 'react';
+import { Box, Center, Heading, Stack, Text, VStack } from '@chakra-ui/react';
+import Image from 'components/Image';
+import expertise from '../../../public/images/expertise.png';
 
 const Expertise = () => {
   return (
@@ -21,16 +23,12 @@ const Expertise = () => {
           w="full"
           justifyContent="center"
         >
-          <Box>
+          <Center >
             <Image
-              src="/images/expertise.png"
+              src={expertise}
               alt="thumbnail"
-              w="auto"
-              h={{ base: '280px', lg: '390px' }}
-              display="block"
-              m="auto"
             />
-          </Box>
+          </Center>
           <VStack
             py="30px"
             maxW={{ base: '100%', lg: '460px' }}

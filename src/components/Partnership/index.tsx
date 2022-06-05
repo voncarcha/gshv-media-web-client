@@ -1,5 +1,13 @@
 import React from 'react';
-import { Image, Box, Heading, Grid } from '@chakra-ui/react';
+import { Box, Heading, Grid, Center } from '@chakra-ui/react';
+import Image from 'components/Image';
+import parterLogo1 from '../../../public/images/partner-logicboxes.png';
+import parterLogo2 from '../../../public/images/partner-linode.png';
+import parterLogo3 from '../../../public/images/partner-monetizer.png';
+import parterLogo4 from '../../../public/images/partner-adplexity.png';
+import parterLogo5 from '../../../public/images/partner-uptimerobot.png';
+import parterLogo6 from '../../../public/images/partner-inap.png';
+import parterLogo7 from '../../../public/images/partner-realtime-register.png';
 
 const Partnership = () => {
   return (
@@ -19,47 +27,67 @@ const Partnership = () => {
           templateColumns={{
             base: 'repeat(2, 1fr)',
             md: 'repeat(3, 1fr)',
-            lg: 'repeat(6, 1fr)',
+            lg: 'repeat(7, 1fr)',
           }}
           gap={{ base: 4, md: 8 }}
           w="full"
         >
-          <Image
-            src="/images/partner-logicboxes.png"
-            alt="partner-logo"
-            display="block"
-            m="auto"
-          />
-          <Image
-            src="/images/partner-linode.png"
-            alt="partner-logo"
-            display="block"
-            m="auto"
-          />
-          <Image
-            src="/images/partner-monetizer.png"
-            alt="partner-logo"
-            display="block"
-            m="auto"
-          />
-          <Image
-            src="/images/partner-adplexity.png"
-            alt="partner-logo"
-            display="block"
-            m="auto"
-          />
-          <Image
-            src="/images/partner-uptimerobot.png"
-            alt="partner-logo"
-            display="block"
-            m="auto"
-          />
-          <Image
-            src="/images/partner-inap.png"
-            alt="partner-logo"
-            display="block"
-            m="auto"
-          />
+          <Center>
+            <Image
+              src={parterLogo1}
+              alt="partner-logo"
+              display="block"
+              m="auto"
+            />
+          </Center>
+          <Center>
+            <Image
+              src={parterLogo2}
+              alt="partner-logo"
+              display="block"
+              m="auto"
+            />
+          </Center>
+          <Center>
+            <Image
+              src={parterLogo3}
+              alt="partner-logo"
+              display="block"
+              m="auto"
+            />
+          </Center>
+          <Center>
+            <Image
+              src={parterLogo4}
+              alt="partner-logo"
+              display="block"
+              m="auto"
+            />
+          </Center>
+          <Center>
+            <Image
+              src={parterLogo5}
+              alt="partner-logo"
+              display="block"
+              m="auto"
+            />
+          </Center>
+          <Center>
+            <Image
+              src={parterLogo6}
+              alt="partner-logo"
+              display="block"
+              m="auto"
+            />
+          </Center>
+          <Center>
+            <Image
+              src={parterLogo7}
+              alt="partner-logo"
+              display="block"
+              m="auto"
+            />
+          </Center>
         </Grid>
       </Box>
     </Box>

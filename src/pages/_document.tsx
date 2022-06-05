@@ -18,6 +18,7 @@ export default class Document extends NextDocument {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
         <title>GSHV MEDIA LTD</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
         <body>
           <Main />
           <NextScript />

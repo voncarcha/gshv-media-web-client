@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import {
   HStack,
-  Image,
   Flex,
   Box,
   IconButton,
@@ -12,6 +11,8 @@ import {
 } from '@chakra-ui/react';
 import { Link as ScrollLink } from 'react-scroll';
 import NextLink from 'next/link';
+import Image from 'components/Image';
+import logo from '../../../public/images/logo.png';
 
 const TopNav = () => {
   const [mounted, setMounted] = useState(false);
@@ -44,7 +45,9 @@ const TopNav = () => {
       >
         <NextLink href="/">
           <Link>
-            <Image src="/images/logo.png" alt="logo" w="150px" h="70px" />
+            <Box w={150} h={70}>
+              <Image src={logo} alt="logo" />
+            </Box>
           </Link>
         </NextLink>
         {mounted && (

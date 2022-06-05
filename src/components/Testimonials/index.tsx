@@ -1,15 +1,19 @@
 import React from 'react';
 import {
   Box,
+  Center,
   Heading,
   Icon,
-  Image,
   IconButton,
   Text,
   VStack,
 } from '@chakra-ui/react';
 import Slider from 'react-slick';
 import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
+import Image from 'components/Image';
+import logo1 from '../../../public/images/testi-logo-1.png';
+import logo2 from '../../../public/images/testi-logo-2.png';
+import logo3 from '../../../public/images/testi-logo-3.png';
 
 const PrevArrow = ({ onClick }: { onClick?: () => {} }) => {
   return (
@@ -67,14 +71,9 @@ const Testimonials = () => {
           <Box px="60px">
             <VStack spacing={5} as="article" maxW="760px" m="0 auto">
               <Box>
-                <Image
-                  src="/images/testi-logo-1.png"
-                  alt="testi-logo"
-                  display="block"
-                  m="auto"
-                  w="70px"
-                  borderRadius="100%"
-                />
+                <Center w={70} m="auto">
+                  <Image src={logo1} alt="logo" />
+                </Center>
               </Box>
               <Box textAlign="center">
                 <Text fontWeight={700} fontSize="18px">
@@ -95,14 +94,9 @@ const Testimonials = () => {
           <Box px="60px">
             <VStack spacing={5} as="article" maxW="760px" m="0 auto">
               <Box>
-                <Image
-                  src="/images/testi-logo-2.png"
-                  alt="testi-logo"
-                  display="block"
-                  m="auto"
-                  w="70px"
-                  borderRadius="100%"
-                />
+                <Center w={70} m="auto">
+                  <Image src={logo2} alt="logo" />
+                </Center>
               </Box>
               <Box textAlign="center">
                 <Text fontWeight={700} fontSize="18px">
@@ -122,14 +116,9 @@ const Testimonials = () => {
           <Box px="60px">
             <VStack spacing={5} as="article" maxW="760px" m="0 auto">
               <Box>
-                <Image
-                  src="/images/testi-logo-3.png"
-                  alt="testi-logo"
-                  display="block"
-                  m="auto"
-                  w="70px"
-                  borderRadius="100%"
-                />
+                <Center w={70} m="auto">
+                  <Image src={logo3} alt="logo" />
+                </Center>
               </Box>
               <Box textAlign="center">
                 <Text fontWeight={700} fontSize="18px">
